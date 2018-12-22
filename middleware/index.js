@@ -34,7 +34,7 @@ middlewareObj.checkCampgroundOwnership = function(req, res, next) {
 
 middlewareObj.checkCommentOwnership = function(req, res, next) {
     if (req.isAuthenticated()) {
-        Comment.findById(req.params.commentId, function(err, foundComment) {
+        Comment.findById(req.params.comment_id, function(err, foundComment) {
             if (err || !foundComment) {
                 console.log(err);
                 req.flash('error', 'Sorry, that comment does not exist!');
