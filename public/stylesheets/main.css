@@ -21,3 +21,7 @@
     margin: 25px auto;
     
 }
+
+.thumbnail .campgroundImage {
+    height: 150px;
+}
